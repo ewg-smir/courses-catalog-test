@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Courses Catalog</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.scss" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+        <span class="header__subtitle">Enjoy your studying!</span>
+        <h1 class="header__title">Our online courses</h1>
+      </header>
+
+      <main class="catalog">
+        <div class="catalog__controls">
+          <div class="catalog__tabs tabs">
+            <button class="tabs__btn tabs__btn--active" data-category="all">
+              All <sup>0</sup>
+            </button>
+            <button class="tabs__btn" data-category="marketing">
+              Marketing <sup>0</sup>
+            </button>
+            <button class="tabs__btn" data-category="management">
+              Management <sup>0</sup>
+            </button>
+            <button class="tabs__btn" data-category="hr">
+              HR & Recruting <sup>0</sup>
+            </button>
+            <button class="tabs__btn" data-category="design">
+              Design <sup>0</sup>
+            </button>
+            <button class="tabs__btn" data-category="development">
+              Development <sup>0</sup>
+            </button>
+          </div>
+          <div class="catalog__search search">
+            <input
+              type="text"
+              class="search__input"
+              id="search-input"
+              placeholder="Search course..."
+            />
+            <button class="search__btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#999"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="catalog__grid" id="cards-container"></div>
+        <div class="catalog__more">
+          <button class="btn-load-more">
+            <span class="icon-refresh">↻</span> Load more
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
