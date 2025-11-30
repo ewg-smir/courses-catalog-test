@@ -26,8 +26,8 @@ body {
   color: var(--text-dark);
   -webkit-font-smoothing: antialiased;
   background-image:
-    url('../assets/dots.png'), url('../assets/shapes_2.png'),
-    url('../assets/shapes_1.png');
+    url('/assets/dots.png'), url('/assets/shapes_2.png'),
+    url('/assets/shapes_1.png');
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position:
     top 0 right 0,
